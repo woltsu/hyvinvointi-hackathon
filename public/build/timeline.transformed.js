@@ -21244,7 +21244,7 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "p",
                                 null,
-                                "Hakemus k\xE4r\xE4j\xE4oikeuteen jos olet avioliitossa. Lasten huollosta ja tapaamisista sopiminen lastenvalvojan luona."
+                                "Hakemus k\xE4r\xE4j\xE4oikeuteen jos olet avioliitossa. Lasten huollosta ja tapaamisista sopiminen lastenvalvojan luona. Yhteisen omaisuuden jakamisesta sopiminen."
                             )
                         )
                     ),
@@ -21262,7 +21262,7 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "p",
                                 null,
-                                "ddd"
+                                "Alkaa erohakemuksen j\xE4tt\xE4misen j\xE4lkeen. Harkinta-ajan kesto on v\xE4hint\xE4\xE4n puoli vuotta, jonka j\xE4lkeen voi hakea eron vahvistumista. Jos olet asunut erill\xE4\xE4n 2-vuotta voit hakea suoraan avioeroa."
                             )
                         )
                     ),
@@ -21280,7 +21280,7 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "p",
                                 null,
-                                "ddd"
+                                "Puolisoiden v\xE4linen elatusvelvollisuus p\xE4\xE4tty."
                             )
                         )
                     )

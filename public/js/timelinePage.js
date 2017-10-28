@@ -32,20 +32,23 @@ class Timeline extends React.Component {
                             <div>
                                 <time>Ero</time>
                                 <p>Hakemus käräjäoikeuteen jos olet avioliitossa. Lasten huollosta
-                                    ja tapaamisista sopiminen lastenvalvojan luona.  
+                                    ja tapaamisista sopiminen lastenvalvojan luona. Yhteisen omaisuuden jakamisesta sopiminen.
                                 </p>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <time>Harkinta-aika</time>
-                                <p>ddd</p>
+                                <p>Alkaa erohakemuksen jättämisen jälkeen. Harkinta-ajan kesto on vähintään puoli vuotta, 
+                                    jonka jälkeen voi hakea eron vahvistumista. Jos olet asunut erillään 2-vuotta voit hakea 
+                                    suoraan avioeroa.
+                                </p>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <time>Eron voimaantulo</time>
-                                <p>ddd</p>
+                                <p>Puolisoiden välinen elatusvelvollisuus päätty.</p>
                             </div>
                         </li>
                     </ul>
