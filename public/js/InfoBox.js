@@ -56,7 +56,7 @@ const styles = {
         backgroundColor: "white",
         boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)",
         borderRadius: "8px",
-        backgroundColor: "#F08080",
+        backgroundColor: "#3579DC",
         color: "white"
     }
 }

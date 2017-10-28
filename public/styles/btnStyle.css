@@ -1,7 +1,7 @@
 .btn-sample { 
-  color: #000000; 
+  color: #FFFFFF; 
   background-color: rgba(255,0,0,0); 
-  border-color: #000000; 
+  border-color: #FFFFFF; 
 } 
  
 .btn-sample:hover, 
@@ -9,9 +9,9 @@
 .btn-sample:active, 
 .btn-sample.active, 
 .open .dropdown-toggle.btn-sample { 
-  color: #000000; 
-  background-color: #F08080; 
-  border-color: #000000; 
+  color: #FFFFFF; 
+  background-color: #3579DC; 
+  border-color: #FFFFFF; 
 } 
  
 .btn-sample:active, 
@@ -35,8 +35,8 @@ fieldset[disabled] .btn-sample:active,
 .btn-sample.disabled.active, 
 .btn-sample[disabled].active, 
 fieldset[disabled] .btn-sample.active { 
-  background-color: #F08080; 
-  border-color: #000000; 
+  background-color: #3579DC; 
+  border-color: #FFFFFF; 
 } 
  
 .btn-sample .badge { 
