@@ -21221,12 +21221,12 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "time",
                                 null,
-                                "Asumusero"
+                                "Erop\xE4\xE4t\xF6s"
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "p",
                                 null,
-                                "bbb"
+                                "Lasten, asumisen ja talousasioiden j\xE4rjest\xE4minen. Erokriisin l\xE4pik\xE4ynti\xE4."
                             )
                         )
                     ),
@@ -21239,12 +21239,12 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "time",
                                 null,
-                                "Erohakemus"
+                                "Ero"
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "p",
                                 null,
-                                "ccc"
+                                "Hakemus k\xE4r\xE4j\xE4oikeuteen jos olet avioliitossa. Lasten huollosta ja tapaamisista sopiminen lastenvalvojan luona."
                             )
                         )
                     ),
