@@ -37,7 +37,7 @@ class Index extends React.Component {
                         <button onClick={() => this.selectMode("Aikuinen")} class="btn btn-primary" style={style.buttonStyle}>Aikuinen</button>
                     </div>
                     <div class="col-md-5 col-xs-11">
-                        <button onClick={() => this.selectMode("Nuori")} class="btn btn-primary" style={style.buttonStyle}>Lapsi</button>
+                        <button onClick={() => this.selectMode("Nuori")} class="btn btn-primary" style={style.buttonStyle}>Nuori</button>
                     </div>
                 </div>
             </div>

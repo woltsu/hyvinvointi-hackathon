@@ -1021,7 +1021,7 @@ class Index extends React.Component {
                     React.createElement(
                         "button",
                         { onClick: () => this.selectMode("Nuori"), "class": "btn btn-primary", style: style.buttonStyle },
-                        "Lapsi"
+                        "Nuori"
                     )
                 )
             )
@@ -21246,7 +21246,34 @@ var React = __webpack_require__(3);
 var InfoBox = __webpack_require__(33);
 
 class Info extends React.Component {
+    renderYoungInfo() {
+        return React.createElement(
+            "div",
+            null,
+            React.createElement(InfoBox, { title: "1. Hyvinvointi", content: "Nuoren hyvinvointi" }),
+            React.createElement(InfoBox, { title: "2. Mist\xE4 apua?", content: "APUA APUA APUA APUA" })
+        );
+    }
+
+    renderAdultInfo() {
+        return React.createElement(
+            "div",
+            null,
+            React.createElement(InfoBox, { title: "1. Hyvinvointi", content: "Aikuisen hyvinvointi" }),
+            React.createElement(InfoBox, { title: "2. Talous", content: "Apua taloudellisissa asioissa" }),
+            React.createElement(InfoBox, { title: "3. Lapset", content: "Apua lapsiin liittyviss\xE4 asioissa" }),
+            React.createElement(InfoBox, { title: "4. Oikeudet", content: "Apua oikeudellisiin asioihin" })
+        );
+    }
+
     render() {
+        let content;
+        if (this.props.mode === "Aikuinen") {
+            content = this.renderAdultInfo();
+        } else {
+            content = this.renderYoungInfo();
+        }
+
         return React.createElement(
             "div",
             { "class": "container" },
@@ -21263,8 +21290,7 @@ class Info extends React.Component {
                     )
                 )
             ),
-            React.createElement(InfoBox, { title: "1. Tunteet", content: "aaaaaa" }),
-            React.createElement(InfoBox, { title: "2. Talous", content: "bbbbb" })
+            content
         );
     }
 }
