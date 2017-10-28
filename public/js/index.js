@@ -8,14 +8,14 @@ class Index extends React.Component {
                 <div class="row justify-content-center">
                     <h1>Ero-info</h1>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center text-center">
                     <h2>Oletko aikuinen vai lapsi?</h2>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-3 text-center" style={{float: "right"}}>
+                    <div class="col-md-5 col-xs-11">
                         <button class="btn btn-primary" style={style.buttonStyle}>Aikuinen</button>
                     </div>
-                    <div class="col-3 text-center" style={{float: "left"}}>
+                    <div class="col-md-5 col-xs-11">
                         <button class="btn btn-primary" style={style.buttonStyle}>Lapsi</button>
                     </div>
                 </div>
@@ -27,7 +27,8 @@ class Index extends React.Component {
 const style = {
     buttonStyle: {
         display: "block",
-        width: "100%"
+        width: "100%",
+        marginTop: "3%"
     }
 }
 

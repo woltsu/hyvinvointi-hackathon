@@ -975,7 +975,7 @@ class Index extends React.Component {
             ),
             React.createElement(
                 "div",
-                { "class": "row justify-content-center" },
+                { "class": "row justify-content-center text-center" },
                 React.createElement(
                     "h2",
                     null,
@@ -987,7 +987,7 @@ class Index extends React.Component {
                 { "class": "row justify-content-center" },
                 React.createElement(
                     "div",
-                    { "class": "col-3 text-center", style: { float: "right" } },
+                    { "class": "col-md-5 col-xs-11" },
                     React.createElement(
                         "button",
                         { "class": "btn btn-primary", style: style.buttonStyle },
@@ -996,7 +996,7 @@ class Index extends React.Component {
                 ),
                 React.createElement(
                     "div",
-                    { "class": "col-3 text-center", style: { float: "left" } },
+                    { "class": "col-md-5 col-xs-11" },
                     React.createElement(
                         "button",
                         { "class": "btn btn-primary", style: style.buttonStyle },
@@ -1011,7 +1011,8 @@ class Index extends React.Component {
 const style = {
     buttonStyle: {
         display: "block",
-        width: "100%"
+        width: "100%",
+        marginTop: "3%"
     }
 };
 
