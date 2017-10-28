@@ -8,25 +8,29 @@ class Timeline extends React.Component {
                 <ul>
                     <li>
                         <div>
-                            <time>1934</time>
-                            <p>aaa</p>
+                            <time>Harkitsen eroa</time>
+                            <p>
+                                Parisuhteessa ihminen kohtaa erilaisia haasteita, ja pyrkii ratkaisemaan niitä monella tavalla.
+                                Joskus haasteet koetaan niiin vaikeiksi että ihminen alkaa harkita eroa. Eron harkinta voi johtaa 
+                                lopulliseen eroon tai eron harkintavaiheessa voi hakea apua erilaisiin suhteessa heränneisiin kysymyksiin.
+                            </p>
                         </div>
-                    </li>
+                    </li> 
                     <li>
                         <div>
-                            <time>1934</time>
+                            <time>Asumusero</time>
                             <p>bbb</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <time>1934</time>
+                            <time>Erohakemus</time>
                             <p>ccc</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <time>1934</time>
+                            <time>Harkinta-aika</time>
                             <p>ddd</p>
                         </div>
                     </li>

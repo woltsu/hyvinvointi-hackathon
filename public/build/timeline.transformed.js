@@ -21187,12 +21187,12 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "time",
                             null,
-                            "1934"
+                            "Harkitsen eroa"
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "p",
                             null,
-                            "aaa"
+                            "Parisuhteessa ihminen kohtaa erilaisia haasteita, ja pyrkii ratkaisemaan niit\xE4 monella tavalla. Joskus haasteet koetaan niiin vaikeiksi ett\xE4 ihminen alkaa harkita eroa. Eron harkinta voi johtaa lopulliseen eroon tai eron harkintavaiheessa voi hakea apua erilaisiin suhteessa her\xE4nneisiin kysymyksiin."
                         )
                     )
                 ),
@@ -21205,7 +21205,7 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "time",
                             null,
-                            "1934"
+                            "Asumusero"
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "p",
@@ -21223,7 +21223,7 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "time",
                             null,
-                            "1934"
+                            "Erohakemus"
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "p",
@@ -21241,7 +21241,7 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "time",
                             null,
-                            "1934"
+                            "Harkinta-aika"
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "p",
