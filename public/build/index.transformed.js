@@ -21236,7 +21236,7 @@ class Info extends React.Component {
                         React.createElement(
                             "b",
                             null,
-                            "Linkit; kutsutaan 3. sektori kehitt\xE4m\xE4\xE4n sis\xE4lt\xF6\xE4"
+                            "Linkit; kutsutaan 3. osapuoli kehitt\xE4m\xE4\xE4n sis\xE4lt\xF6\xE4"
                         )
                     )
                 )
