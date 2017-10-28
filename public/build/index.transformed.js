@@ -991,7 +991,7 @@ class Index extends React.Component {
                     React.createElement(
                         "button",
                         { "class": "btn btn-primary", style: style.buttonStyle },
-                        "Lapsi"
+                        "Aikuinen"
                     )
                 ),
                 React.createElement(
@@ -1000,7 +1000,7 @@ class Index extends React.Component {
                     React.createElement(
                         "button",
                         { "class": "btn btn-primary", style: style.buttonStyle },
-                        "Aikuinen"
+                        "Lapsi"
                     )
                 )
             )

@@ -13,10 +13,10 @@ class Index extends React.Component {
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-3 text-center" style={{float: "right"}}>
-                        <button class="btn btn-primary" style={style.buttonStyle}>Lapsi</button>
+                        <button class="btn btn-primary" style={style.buttonStyle}>Aikuinen</button>
                     </div>
                     <div class="col-3 text-center" style={{float: "left"}}>
-                        <button class="btn btn-primary" style={style.buttonStyle}>Aikuinen</button>
+                        <button class="btn btn-primary" style={style.buttonStyle}>Lapsi</button>
                     </div>
                 </div>
             </div>
