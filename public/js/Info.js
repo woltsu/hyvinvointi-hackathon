@@ -24,6 +24,11 @@ class Info extends React.Component {
                             <b>Mahdollisuus chat tapaamiseen asiantuntijan kanssa
                         ja mahdollisuus ohjattuun chat keskusteluun eron toisen osapuolen kanssa.</b>
                             <hr />
+                            <b>
+                                Sähköinen kalenteri, jonka avulla voi nähdä eri palveluiden vapaita aikoja ja mahdollisesti 
+                                varata niitä
+                            </b>
+                            <hr />
                             <b>Elatusapulaskuri</b>
                             <hr />
                             <b>Linkit; kutsutaan 3. sektori kehittämään sisältöä</b>

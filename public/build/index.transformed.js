@@ -21224,6 +21224,12 @@ class Info extends React.Component {
                         React.createElement(
                             "b",
                             null,
+                            "S\xE4hk\xF6inen kalenteri, jonka avulla voi n\xE4hd\xE4 eri palveluiden vapaita aikoja ja mahdollisesti varata niit\xE4"
+                        ),
+                        React.createElement("hr", null),
+                        React.createElement(
+                            "b",
+                            null,
                             "Elatusapulaskuri"
                         ),
                         React.createElement("hr", null),
