@@ -5,6 +5,7 @@ class InfoBox extends React.Component {
         return (
             <div style={styles.box}>
                 <h2>{this.props.title}</h2>
+                <hr />
                 <p>{this.props.content}</p>
             </div>
         );

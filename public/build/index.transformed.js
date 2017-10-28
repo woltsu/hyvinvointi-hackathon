@@ -965,10 +965,13 @@ class Index extends React.Component {
         super(props);
         this.state = {
             modeSelected: false,
+            testSelected: false,
+            test: null,
             mode: null
         };
 
         this.selectMode = this.selectMode.bind(this);
+        this.setTest = this.setTest.bind(this);
     }
 
     selectMode(mode) {
@@ -978,9 +981,71 @@ class Index extends React.Component {
         });
     }
 
+    setTest(wantsTest) {
+        this.setState({
+            testSelected: true,
+            test: wantsTest
+        });
+    }
+
     render() {
         if (this.state.modeSelected) {
-            return React.createElement(Info, { mode: this.state.mode });
+            if (!this.state.testSelected) {
+                return React.createElement(
+                    "div",
+                    { "class": "container" },
+                    React.createElement(
+                        "div",
+                        { "class": "row justify-content-center" },
+                        React.createElement(
+                            "h1",
+                            null,
+                            "Ero-info"
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { "class": "row justify-content-center text-center" },
+                        React.createElement(
+                            "h2",
+                            null,
+                            "Haluatko tehd\xE4 testin?"
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { "class": "row justify-content-center" },
+                        React.createElement(
+                            "div",
+                            { "class": "col-md-5 col-xs-11" },
+                            React.createElement(
+                                "button",
+                                { onClick: () => this.setTest(true), "class": "btn btn-outline-primary", style: style.buttonStyle },
+                                "Kyll\xE4"
+                            )
+                        ),
+                        React.createElement(
+                            "div",
+                            { "class": "col-md-5 col-xs-11" },
+                            React.createElement(
+                                "button",
+                                { onClick: () => this.setTest(false), "class": "btn btn-outline-primary", style: style.buttonStyle },
+                                "En"
+                            )
+                        )
+                    )
+                );
+            } else {
+                if (!this.state.test) {
+                    return React.createElement(Info, { mode: this.state.mode });
+                } else {
+                    return React.createElement(
+                        "h1",
+                        null,
+                        "Testi"
+                    );
+                }
+            }
         }
         return React.createElement(
             "div",
@@ -1011,7 +1076,7 @@ class Index extends React.Component {
                     { "class": "col-md-5 col-xs-11" },
                     React.createElement(
                         "button",
-                        { onClick: () => this.selectMode("Aikuinen"), "class": "btn btn-primary", style: style.buttonStyle },
+                        { onClick: () => this.selectMode("Aikuinen"), "class": "btn btn-outline-primary", style: style.buttonStyle },
                         "Aikuinen"
                     )
                 ),
@@ -1020,7 +1085,7 @@ class Index extends React.Component {
                     { "class": "col-md-5 col-xs-11" },
                     React.createElement(
                         "button",
-                        { onClick: () => this.selectMode("Nuori"), "class": "btn btn-primary", style: style.buttonStyle },
+                        { onClick: () => this.selectMode("Nuori"), "class": "btn btn-outline-primary", style: style.buttonStyle },
                         "Nuori"
                     )
                 )
@@ -21313,6 +21378,7 @@ class InfoBox extends React.Component {
                 null,
                 this.props.title
             ),
+            React.createElement("hr", null),
             React.createElement(
                 "p",
                 null,
