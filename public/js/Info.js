@@ -31,7 +31,7 @@ class Info extends React.Component {
                             <hr />
                             <b>Elatusapulaskuri</b>
                             <hr />
-                            <b>Linkit; kutsutaan 3. sektori kehittämään sisältöä</b>
+                            <b>Linkit; kutsutaan 3. osapuoli kehittämään sisältöä</b>
                         </InfoBox>
                     </div>
                 </div>
