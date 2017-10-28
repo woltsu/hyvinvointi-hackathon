@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 31);
+/******/ 	return __webpack_require__(__webpack_require__.s = 37);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -21152,364 +21152,102 @@ module.exports = function() {
 
 
 /***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var React = __webpack_require__(3);
-var ReactDOM = __webpack_require__(17);
-var Info = __webpack_require__(32);
-var Test = __webpack_require__(35);
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 
-class Index extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            testSelected: false,
-            test: null
-        };
 
-        this.setTest = this.setTest.bind(this);
-        this.endTest = this.endTest.bind(this);
-    }
 
-    setTest(wantsTest) {
-        this.setState({
-            testSelected: true,
-            test: wantsTest,
-            currentValues: {
-                "1": 0,
-                "2": 0,
-                "3": 0,
-                "4": 0
-            }
-        });
-    }
-
-    endTest(newValues) {
-        this.setState({
-            test: false,
-            currentValues: newValues
-        });
-    }
-
+class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
-        if (!this.state.testSelected) {
-            return React.createElement(
-                "div",
-                { "class": "container" },
-                React.createElement(
-                    "div",
-                    { "class": "row justify-content-center" },
-                    React.createElement(
-                        "h1",
-                        null,
-                        "Ero-info"
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "row justify-content-center text-center" },
-                    React.createElement(
-                        "h2",
-                        null,
-                        "Haluatko tehd\xE4 ohjaavan testin?"
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "row justify-content-center" },
-                    React.createElement(
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "section",
+            { "class": "timeline" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "ul",
+                null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "div",
-                        { "class": "col-md-5 col-xs-11" },
-                        React.createElement(
-                            "button",
-                            { onClick: () => this.setTest(true), "class": "btn btn-outline-primary", style: style.buttonStyle },
-                            "Kyll\xE4"
-                        )
-                    ),
-                    React.createElement(
-                        "div",
-                        { "class": "col-md-5 col-xs-11" },
-                        React.createElement(
-                            "button",
-                            { onClick: () => this.setTest(false), "class": "btn btn-outline-primary", style: style.buttonStyle },
-                            "En"
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "time",
+                            null,
+                            "1934"
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "p",
+                            null,
+                            "aaa"
                         )
                     )
-                )
-            );
-        } else {
-            if (!this.state.test) {
-                return React.createElement(Info, { mode: "Aikuinen" });
-            } else {
-                return React.createElement(Test, null);
-            }
-        }
-    }
-}
-
-const style = {
-    buttonStyle: {
-        display: "block",
-        width: "100%",
-        marginTop: "3%"
-    }
-};
-
-ReactDOM.render(React.createElement(Index, null), document.getElementById("app"));
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var React = __webpack_require__(3);
-var InfoBox = __webpack_require__(33);
-
-class Info extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            showTimeline: false
-        };
-    }
-
-    showTimeline() {
-        var newState = !this.state.showTimeline;
-        this.setState({
-            showTimeline: newState
-        });
-    }
-
-    renderYoungInfo() {
-        return React.createElement(
-            "div",
-            null,
-            React.createElement(
-                "h1",
-                null,
-                "TODO"
-            )
-        );
-    }
-
-    renderAdultInfo() {
-        return React.createElement(
-            "div",
-            null,
-            React.createElement(
-                "a",
-                { href: "/timeline" },
-                "TIMELINE"
-            ),
-            React.createElement(InfoBox, { id: "1", title: "1. Asumisen j\xE4rjest\xE4minen", content: "Asuminen" }),
-            React.createElement(InfoBox, { id: "2", title: "2. Lapset", content: "Lapset" }),
-            React.createElement(InfoBox, { id: "3", title: "3. Taloudellinen selviytyminen", content: "Talous" }),
-            React.createElement(InfoBox, { id: "4", title: "4. Oma hyvinvointi", content: "Oikeus" })
-        );
-    }
-
-    render() {
-        let content;
-        if (this.props.mode === "Aikuinen") {
-            content = this.renderAdultInfo();
-        } else {
-            content = this.renderYoungInfo();
-        }
-
-        return React.createElement(
-            "div",
-            { "class": "container" },
-            React.createElement(
-                "div",
-                { "class": "row" },
-                React.createElement(
-                    "div",
-                    { "class": "col-12 text-center" },
-                    React.createElement(
-                        "h1",
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
                         null,
-                        this.props.mode
-                    )
-                )
-            ),
-            content
-        );
-    }
-}
-
-module.exports = Info;
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var React = __webpack_require__(3);
-var InfoSection = __webpack_require__(34);
-
-class InfoBox extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            expanded: false
-        };
-
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-        var newState = !this.state.expanded;
-        this.setState({
-            expanded: newState
-        });
-    }
-
-    render() {
-        return React.createElement(
-            "div",
-            { id: this.props.title, style: styles.box, onClick: this.handleClick },
-            React.createElement(
-                "h2",
-                null,
-                this.props.title
-            ),
-            React.createElement(InfoSection, { id: this.props.id, expanded: this.state.expanded, content: this.props.content })
-        );
-    }
-}
-
-const styles = {
-    box: {
-        boxSizing: "border-box",
-        padding: "5px",
-        marginTop: "2%",
-        marginBottom: "4%",
-        marginLeft: "4%",
-        marginRight: "4%",
-        backgroundColor: "white",
-        boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)",
-        cursor: "pointer"
-    }
-};
-
-module.exports = InfoBox;
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var React = __webpack_require__(3);
-
-class InfoSection extends React.Component {
-    componentDidMount() {
-        var id = "content-" + this.props.id;
-        var expandedHeight = document.getElementById(id).clientHeight;
-        this.setState({
-            expandedHeight: expandedHeight + 25
-        });
-    }
-
-    render() {
-        let height;
-        if (this.props.expanded) {
-            height = this.state.expandedHeight + "px";
-        } else {
-            height = "0px";
-        }
-        const style = {
-            height: height,
-            transition: "height 0.5s",
-            overflow: "hidden"
-        };
-
-        return React.createElement(
-            "div",
-            { style: style },
-            React.createElement(
-                "div",
-                { id: "content-" + this.props.id },
-                React.createElement("hr", null),
-                React.createElement(
-                    "p",
-                    null,
-                    this.props.content
-                )
-            )
-        );
-    }
-}
-
-module.exports = InfoSection;
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var React = __webpack_require__(3);
-var data = __webpack_require__(36);
-
-class Test extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            questions: data,
-            currentQuestion: data[0],
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0
-        };
-
-        this.updateState = this.updateState.bind(this);
-    }
-
-    updateState(bool) {
-        if (bool) {
-            var newValue = this.state;
-            this.updateState();
-        }
-    }
-
-    render() {
-        return React.createElement(
-            "div",
-            { "class": "container" },
-            React.createElement(
-                "div",
-                { "class": "row justify-content-center" },
-                React.createElement(
-                    "h1",
-                    null,
-                    "Kyss\xE4rit"
-                )
-            ),
-            React.createElement(
-                "div",
-                { "class": "row justify-content-center text-center" },
-                React.createElement(
-                    "h2",
-                    null,
-                    this.state.question.question
-                )
-            ),
-            React.createElement(
-                "div",
-                { "class": "row justify-content-center" },
-                React.createElement(
-                    "div",
-                    { "class": "col-md-5 col-xs-11" },
-                    React.createElement(
-                        "button",
-                        { onClick: () => this.updateState(true), "class": "btn btn-outline-primary", style: style.buttonStyle },
-                        "Kyll\xE4"
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "time",
+                            null,
+                            "1934"
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "p",
+                            null,
+                            "bbb"
+                        )
                     )
                 ),
-                React.createElement(
-                    "div",
-                    { "class": "col-md-5 col-xs-11" },
-                    React.createElement(
-                        "button",
-                        { onClick: () => this.updateState(false), "class": "btn btn-outline-primary", style: style.buttonStyle },
-                        "Ei"
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "time",
+                            null,
+                            "1934"
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "p",
+                            null,
+                            "ccc"
+                        )
+                    )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "time",
+                            null,
+                            "1934"
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "p",
+                            null,
+                            "ddd"
+                        )
                     )
                 )
             )
@@ -21517,13 +21255,7 @@ class Test extends React.Component {
     }
 }
 
-module.exports = Test;
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-module.exports = [{"question":"Eka kyssäri","value":"1"},{"question":"Toka kyssäri","value":"2"},{"question":"Kolmas kyssäri","value":"3"},{"question":"Neljäs kyssäri","value":"4"}]
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Timeline, null), document.getElementById("app"));
 
 /***/ })
 /******/ ]);

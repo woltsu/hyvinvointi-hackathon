@@ -2,11 +2,24 @@ var React = require("react");
 var InfoBox = require("./InfoBox");
 
 class Info extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state=({
+            showTimeline: false
+        });
+    }
+
+    showTimeline() {
+        var newState = !this.state.showTimeline;
+        this.setState({
+            showTimeline: newState
+        });
+    }
+
     renderYoungInfo() {
         return (
             <div>
-                <InfoBox title="1. Hyvinvointi" content="Nuoren hyvinvointi" />
-                <InfoBox title="2. Mistä apua?" content="APUA APUA APUA APUA" />
+                <h1>TODO</h1>
             </div>
         );
     }
@@ -14,10 +27,11 @@ class Info extends React.Component {
     renderAdultInfo() {
         return (
             <div>
-                <InfoBox title="1. Hyvinvointi" content="Aikuisen hyvinvointi" />
-                <InfoBox title="2. Talous" content="Apua taloudellisissa asioissa" />
-                <InfoBox title="3. Lapset" content="Apua lapsiin liittyvissä asioissa" />
-                <InfoBox title="4. Oikeudet" content="Apua oikeudellisiin asioihin" />
+                <a href="/timeline">TIMELINE</a>
+                <InfoBox id="1" title="1. Asumisen järjestäminen" content="Asuminen" />
+                <InfoBox id="2" title="2. Lapset" content="Lapset" />
+                <InfoBox id="3" title="3. Taloudellinen selviytyminen" content="Talous" />
+                <InfoBox id="4" title="4. Oma hyvinvointi" content="Oikeus" />
             </div>
         );
     }

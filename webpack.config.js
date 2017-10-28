@@ -1,6 +1,7 @@
 module.exports = {
     entry: {
-        index: __dirname + "/public/js/index.js"
+        index: __dirname + "/public/js/index.js",
+        timeline: __dirname + "/public/js/timelinePage.js"
     },
     output: {
         filename: "[name].transformed.js",

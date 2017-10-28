@@ -9,7 +9,9 @@ app.use(function (err, req, res, next) {
 });
 
 var defaultController = require("./controllers/defaultController");
+var timelineController = require("./controllers/timelineController");
 defaultController(app);
+timelineController(app);
 
 app.set("view engine", "ejs");
 
