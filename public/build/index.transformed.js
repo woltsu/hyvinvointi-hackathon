@@ -962,12 +962,58 @@ var ReactDOM = __webpack_require__(18);
 class Index extends React.Component {
     render() {
         return React.createElement(
-            "h1",
-            null,
-            "Hello World!"
+            "div",
+            { "class": "container" },
+            React.createElement(
+                "div",
+                { "class": "row justify-content-center" },
+                React.createElement(
+                    "h1",
+                    null,
+                    "Ero-info"
+                )
+            ),
+            React.createElement(
+                "div",
+                { "class": "row justify-content-center" },
+                React.createElement(
+                    "h2",
+                    null,
+                    "Oletko aikuinen vai lapsi?"
+                )
+            ),
+            React.createElement(
+                "div",
+                { "class": "row justify-content-center" },
+                React.createElement(
+                    "div",
+                    { "class": "col-3 text-center", style: { float: "right" } },
+                    React.createElement(
+                        "button",
+                        { "class": "btn btn-primary", style: style.buttonStyle },
+                        "Lapsi"
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { "class": "col-3 text-center", style: { float: "left" } },
+                    React.createElement(
+                        "button",
+                        { "class": "btn btn-primary", style: style.buttonStyle },
+                        "Aikuinen"
+                    )
+                )
+            )
         );
     }
 }
+
+const style = {
+    buttonStyle: {
+        display: "block",
+        width: "100%"
+    }
+};
 
 ReactDOM.render(React.createElement(Index, null), document.getElementById("app"));
 

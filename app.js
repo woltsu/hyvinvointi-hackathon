@@ -4,9 +4,9 @@ var port = process.env.PORT || 3000;
 
 app.use("/assets", express.static(__dirname + "/public"));
 
-//app.use(function (err, req, res, next) {
-//  res.status(404).send("404 not found :(");
-//});
+app.use(function (err, req, res, next) {
+    res.status(404).send("404 not found :(");
+});
 
 var defaultController = require("./controllers/defaultController");
 defaultController(app);
