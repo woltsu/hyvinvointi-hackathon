@@ -26,7 +26,7 @@ class InfoSection extends React.Component {
             <div style={style}>
                 <div id={"content-" + this.props.id}>
                     <hr />
-                    <p>{this.props.content}</p>
+                    {this.props.children}
                 </div>
             </div>
         );

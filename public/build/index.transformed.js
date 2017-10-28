@@ -21296,15 +21296,63 @@ class Info extends React.Component {
         return React.createElement(
             "div",
             null,
-            React.createElement(
-                "a",
-                { href: "/timeline" },
-                "TIMELINE"
-            ),
             React.createElement(InfoBox, { id: "1", title: "1. Asumisen j\xE4rjest\xE4minen", content: "Asuminen" }),
-            React.createElement(InfoBox, { id: "2", title: "2. Lapset", content: "Lapset" }),
+            React.createElement(
+                InfoBox,
+                { id: "2", title: "2. Lapset", content: "Lapset" },
+                React.createElement(
+                    "b",
+                    null,
+                    "Laskurit:"
+                ),
+                React.createElement("br", null),
+                React.createElement(
+                    "b",
+                    null,
+                    "Chatit:"
+                ),
+                React.createElement("br", null),
+                React.createElement(
+                    "b",
+                    null,
+                    "Faktaa:"
+                ),
+                React.createElement("br", null),
+                React.createElement(
+                    "b",
+                    null,
+                    "Foorumi:"
+                )
+            ),
             React.createElement(InfoBox, { id: "3", title: "3. Taloudellinen selviytyminen", content: "Talous" }),
-            React.createElement(InfoBox, { id: "4", title: "4. Oma hyvinvointi", content: "Oikeus" })
+            React.createElement(
+                InfoBox,
+                { id: "4", title: "4. Oma hyvinvointi", content: "Oikeus" },
+                React.createElement(
+                    "b",
+                    null,
+                    "Vertaisryhmi\xE4:"
+                ),
+                React.createElement("br", null),
+                React.createElement(
+                    "b",
+                    null,
+                    "Terapiaa:"
+                ),
+                React.createElement("br", null),
+                React.createElement(
+                    "b",
+                    null,
+                    "Tunteiden hallinta:"
+                ),
+                React.createElement("br", null),
+                React.createElement(
+                    "b",
+                    null,
+                    "Uni, ravinto, liikunta:"
+                ),
+                React.createElement("br", null)
+            )
         );
     }
 
@@ -21321,18 +21369,22 @@ class Info extends React.Component {
             { "class": "container" },
             React.createElement(
                 "div",
+                null,
+                content
+            ),
+            React.createElement(
+                "div",
                 { "class": "row" },
                 React.createElement(
                     "div",
                     { "class": "col-12 text-center" },
                     React.createElement(
-                        "h1",
-                        null,
-                        this.props.mode
+                        "a",
+                        { href: "/timeline", "class": "btn btn-primary" },
+                        "TIMELINE"
                     )
                 )
-            ),
-            content
+            )
         );
     }
 }
@@ -21366,13 +21418,17 @@ class InfoBox extends React.Component {
     render() {
         return React.createElement(
             "div",
-            { id: this.props.title, style: styles.box, onClick: this.handleClick },
+            { id: this.props.title, style: styles.box },
             React.createElement(
                 "h2",
-                null,
+                { onClick: this.handleClick, style: { cursor: "pointer" } },
                 this.props.title
             ),
-            React.createElement(InfoSection, { id: this.props.id, expanded: this.state.expanded, content: this.props.content })
+            React.createElement(
+                InfoSection,
+                { id: this.props.id, expanded: this.state.expanded },
+                this.props.children
+            )
         );
     }
 }
@@ -21386,8 +21442,7 @@ const styles = {
         marginLeft: "4%",
         marginRight: "4%",
         backgroundColor: "white",
-        boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)",
-        cursor: "pointer"
+        boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)"
     }
 };
 
@@ -21428,11 +21483,7 @@ class InfoSection extends React.Component {
                 "div",
                 { id: "content-" + this.props.id },
                 React.createElement("hr", null),
-                React.createElement(
-                    "p",
-                    null,
-                    this.props.content
-                )
+                this.props.children
             )
         );
     }

@@ -21173,80 +21173,115 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "section",
-            { "class": "timeline" },
+            "div",
+            null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "ul",
-                null,
+                "section",
+                { "class": "intro" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
+                    "div",
+                    { "class": "container" },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "div",
+                        "h1",
                         null,
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "time",
-                            null,
-                            "Harkitsen eroa"
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "p",
-                            null,
-                            "Parisuhteessa ihminen kohtaa erilaisia haasteita, ja pyrkii ratkaisemaan niit\xE4 monella tavalla. Joskus haasteet koetaan niiin vaikeiksi ett\xE4 ihminen alkaa harkita eroa. Eron harkinta voi johtaa lopulliseen eroon tai eron harkintavaiheessa voi hakea apua erilaisiin suhteessa her\xE4nneisiin kysymyksiin."
-                        )
+                        "Eroprosessi"
                     )
-                ),
+                )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "section",
+                { "class": "timeline" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
+                    "ul",
                     null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "div",
+                        "li",
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "time",
+                            "div",
                             null,
-                            "Asumusero"
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "p",
-                            null,
-                            "bbb"
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "time",
+                                null,
+                                "Harkitsen eroa"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "p",
+                                null,
+                                "Parisuhteessa ihminen kohtaa erilaisia haasteita, ja pyrkii ratkaisemaan niit\xE4 monella tavalla. Joskus haasteet koetaan niiin vaikeiksi ett\xE4 ihminen alkaa harkita eroa. Eron harkinta voi johtaa lopulliseen eroon tai eron harkintavaiheessa voi hakea apua erilaisiin suhteessa her\xE4nneisiin kysymyksiin."
+                            )
                         )
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
+                    ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "div",
+                        "li",
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "time",
+                            "div",
                             null,
-                            "Erohakemus"
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "p",
-                            null,
-                            "ccc"
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "time",
+                                null,
+                                "Asumusero"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "p",
+                                null,
+                                "bbb"
+                            )
                         )
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
+                    ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "div",
+                        "li",
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "time",
+                            "div",
                             null,
-                            "Harkinta-aika"
-                        ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "time",
+                                null,
+                                "Erohakemus"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "p",
+                                null,
+                                "ccc"
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "li",
+                        null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "p",
+                            "div",
                             null,
-                            "ddd"
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "time",
+                                null,
+                                "Harkinta-aika"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "p",
+                                null,
+                                "ddd"
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "li",
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "time",
+                                null,
+                                "Eron voimaantulo"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "p",
+                                null,
+                                "ddd"
+                            )
                         )
                     )
                 )
