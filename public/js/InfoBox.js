@@ -19,10 +19,27 @@ class InfoBox extends React.Component {
     }
 
     render() {
+        var transform = "none";
+        if (this.state.expanded) {
+            transform = "rotate(90deg)";
+        }
+        var rotationStyle = {
+            WebkitTransform: transform,
+            transition: "all 0.4s",
+            display: "inline-block",
+            float: "right",
+            fontSize: "30px"
+        }
         return (
             <div id={this.props.title} style={styles.box}>
-                <h2 onClick={this.handleClick} style={{cursor: "pointer"}}>{this.props.title}</h2>
-                <InfoSection id={this.props.id} expanded={this.state.expanded}>
+                <div onClick={this.handleClick} style={{ cursor: "pointer" }}>
+                    <h4 style={{fontFamily: "Roboto Condensed, sans-serif"}}>{this.props.title}
+                        <span style={rotationStyle}>
+                            <i class="fa fa-angle-right" aria-hidden="true" style={{ float: "right" }}></i>
+                        </span>
+                    </h4>
+                </div>
+                <InfoSection id={this.props.id} expanded={this.state.expanded} style={{fontFamily: "Roboto Condensed, sans-serif"}}>
                     {this.props.children}
                 </InfoSection>
             </div>
@@ -33,13 +50,16 @@ class InfoBox extends React.Component {
 const styles = {
     box: {
         boxSizing: "border-box",
-        padding: "5px",
+        padding: "10px",
         marginTop: "2%",
         marginBottom: "4%",
         marginLeft: "4%",
         marginRight: "4%",
         backgroundColor: "white",
-        boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)"
+        boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)",
+        borderRadius: "8px",
+        backgroundColor: "#F08080",
+        color: "white"
     }
 }
 

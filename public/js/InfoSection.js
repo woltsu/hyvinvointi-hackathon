@@ -19,12 +19,13 @@ class InfoSection extends React.Component {
         const style = {
             height: height,
             transition: "height 0.5s",
-            overflow: "hidden"
+            overflow: "hidden",
+            borderRadius: "8px"
         }
 
         return (
             <div style={style}>
-                <div id={"content-" + this.props.id}>
+                <div id={"content-" + this.props.id} style={{fontFamily: "Oxygen, sans-serif"}}>
                     <hr />
                     {this.props.children}
                 </div>

@@ -360,21 +360,6 @@ module.exports = invariant;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(15);
-} else {
-  module.exports = __webpack_require__(16);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /*
 object-assign
 (c) Sindre Sorhus
@@ -466,6 +451,21 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(15);
+} else {
+  module.exports = __webpack_require__(16);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 5 */
@@ -966,7 +966,7 @@ module.exports = getActiveElement;
  This source code is licensed under the MIT license found in the
  LICENSE file in the root directory of this source tree.
 */
-var f=__webpack_require__(4),p=__webpack_require__(5);__webpack_require__(2);var r=__webpack_require__(1);
+var f=__webpack_require__(3),p=__webpack_require__(5);__webpack_require__(2);var r=__webpack_require__(1);
 function t(a){for(var b=arguments.length-1,d="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,e=0;e<b;e++)d+="\x26args[]\x3d"+encodeURIComponent(arguments[e+1]);b=Error(d+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var u={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function v(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}v.prototype.isReactComponent={};v.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?t("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};v.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function w(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}function x(){}x.prototype=v.prototype;var y=w.prototype=new x;y.constructor=w;f(y,v.prototype);y.isPureReactComponent=!0;function z(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}var A=z.prototype=new x;A.constructor=z;f(A,v.prototype);A.unstable_isAsyncReactComponent=!0;A.render=function(){return this.props.children};
@@ -1003,7 +1003,7 @@ if (process.env.NODE_ENV !== "production") {
 
 'use strict';
 
-var objectAssign$1 = __webpack_require__(4);
+var objectAssign$1 = __webpack_require__(3);
 var require$$0 = __webpack_require__(6);
 var emptyObject = __webpack_require__(5);
 var invariant = __webpack_require__(2);
@@ -2749,7 +2749,7 @@ if (process.env.NODE_ENV === 'production') {
  LICENSE file in the root directory of this source tree.
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(3);__webpack_require__(2);var l=__webpack_require__(9),n=__webpack_require__(4),ba=__webpack_require__(10),ca=__webpack_require__(1),da=__webpack_require__(5),ea=__webpack_require__(11),fa=__webpack_require__(12),ha=__webpack_require__(13),ia=__webpack_require__(14);
+var aa=__webpack_require__(4);__webpack_require__(2);var l=__webpack_require__(9),n=__webpack_require__(3),ba=__webpack_require__(10),ca=__webpack_require__(1),da=__webpack_require__(5),ea=__webpack_require__(11),fa=__webpack_require__(12),ha=__webpack_require__(13),ia=__webpack_require__(14);
 function w(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:w("227");
 function ja(a){switch(a){case "svg":return"http://www.w3.org/2000/svg";case "math":return"http://www.w3.org/1998/Math/MathML";default:return"http://www.w3.org/1999/xhtml"}}
 var ka={Namespaces:{html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"},getIntrinsicNamespace:ja,getChildNamespace:function(a,b){return null==a||"http://www.w3.org/1999/xhtml"===a?ja(b):"http://www.w3.org/2000/svg"===a&&"foreignObject"===b?"http://www.w3.org/1999/xhtml":a}},la=null,oa={};
@@ -3074,10 +3074,10 @@ if (process.env.NODE_ENV !== "production") {
 
 'use strict';
 
-var react = __webpack_require__(3);
+var react = __webpack_require__(4);
 var invariant = __webpack_require__(2);
 var ExecutionEnvironment = __webpack_require__(9);
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(3);
 var EventListener = __webpack_require__(10);
 var require$$0 = __webpack_require__(6);
 var hyphenateStyleName = __webpack_require__(22);
@@ -20553,7 +20553,7 @@ if (process.env.NODE_ENV !== 'production') {
 var emptyFunction = __webpack_require__(1);
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(6);
-var assign = __webpack_require__(4);
+var assign = __webpack_require__(3);
 
 var ReactPropTypesSecret = __webpack_require__(8);
 var checkPropTypes = __webpack_require__(7);
@@ -21155,96 +21155,13 @@ module.exports = function() {
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(3);
+var React = __webpack_require__(4);
 var ReactDOM = __webpack_require__(17);
 var Info = __webpack_require__(32);
-var Test = __webpack_require__(35);
 
 class Index extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            testSelected: false,
-            test: null
-        };
-
-        this.setTest = this.setTest.bind(this);
-        this.endTest = this.endTest.bind(this);
-    }
-
-    setTest(wantsTest) {
-        this.setState({
-            testSelected: true,
-            test: wantsTest,
-            currentValues: {
-                "1": 0,
-                "2": 0,
-                "3": 0,
-                "4": 0
-            }
-        });
-    }
-
-    endTest(newValues) {
-        this.setState({
-            test: false,
-            currentValues: newValues
-        });
-    }
-
     render() {
-        if (!this.state.testSelected) {
-            return React.createElement(
-                "div",
-                { "class": "container" },
-                React.createElement(
-                    "div",
-                    { "class": "row justify-content-center" },
-                    React.createElement(
-                        "h1",
-                        null,
-                        "Ero-info"
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "row justify-content-center text-center" },
-                    React.createElement(
-                        "h2",
-                        null,
-                        "Haluatko tehd\xE4 ohjaavan testin?"
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "row justify-content-center" },
-                    React.createElement(
-                        "div",
-                        { "class": "col-md-5 col-xs-11" },
-                        React.createElement(
-                            "button",
-                            { onClick: () => this.setTest(true), "class": "btn btn-outline-primary", style: style.buttonStyle },
-                            "Kyll\xE4"
-                        )
-                    ),
-                    React.createElement(
-                        "div",
-                        { "class": "col-md-5 col-xs-11" },
-                        React.createElement(
-                            "button",
-                            { onClick: () => this.setTest(false), "class": "btn btn-outline-primary", style: style.buttonStyle },
-                            "En"
-                        )
-                    )
-                )
-            );
-        } else {
-            if (!this.state.test) {
-                return React.createElement(Info, { mode: "Aikuinen" });
-            } else {
-                return React.createElement(Test, null);
-            }
-        }
+        return React.createElement(Info, { mode: "Aikuinen" });
     }
 }
 
@@ -21262,34 +21179,12 @@ ReactDOM.render(React.createElement(Index, null), document.getElementById("app")
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(3);
+var React = __webpack_require__(4);
 var InfoBox = __webpack_require__(33);
 
 class Info extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            showTimeline: false
-        };
-    }
-
-    showTimeline() {
-        var newState = !this.state.showTimeline;
-        this.setState({
-            showTimeline: newState
-        });
-    }
-
-    renderYoungInfo() {
-        return React.createElement(
-            "div",
-            null,
-            React.createElement(
-                "h1",
-                null,
-                "TODO"
-            )
-        );
     }
 
     renderAdultInfo() {
@@ -21303,25 +21198,25 @@ class Info extends React.Component {
                 React.createElement(
                     "b",
                     null,
-                    "Laskurit:"
+                    "Tietopaketti lapsen asemasta eroperheess\xE4; lapsen oikeus henkiseen hyvinvointiin, huoltajuus, asumisratkaisut, tapaamiset ja elatusasiat"
                 ),
-                React.createElement("br", null),
+                React.createElement("hr", null),
                 React.createElement(
                     "b",
                     null,
-                    "Chatit:"
+                    "mahdollisuus chat tapaamiseen asiantuntijan kanssa ja mahdollisuus ohjattuun chat keskusteluun eron toisen osapuolen kanssa."
                 ),
-                React.createElement("br", null),
+                React.createElement("hr", null),
                 React.createElement(
                     "b",
                     null,
-                    "Faktaa:"
+                    "elatusapulaskuri"
                 ),
-                React.createElement("br", null),
+                React.createElement("hr", null),
                 React.createElement(
                     "b",
                     null,
-                    "Foorumi:"
+                    "Linkit= kutsutaan 3. sektori kehitt\xE4m\xE4\xE4n sis\xE4lt\xF6\xE4"
                 )
             ),
             React.createElement(InfoBox, { id: "3", title: "3. Taloudellinen selviytyminen", content: "Talous" }),
@@ -21331,27 +21226,27 @@ class Info extends React.Component {
                 React.createElement(
                     "b",
                     null,
-                    "Vertaisryhmi\xE4:"
+                    "Tietopaketti"
                 ),
-                React.createElement("br", null),
+                React.createElement("hr", null),
                 React.createElement(
                     "b",
                     null,
-                    "Terapiaa:"
+                    "Mahdollisuus chattiin"
                 ),
-                React.createElement("br", null),
+                React.createElement("hr", null),
                 React.createElement(
                     "b",
                     null,
-                    "Tunteiden hallinta:"
+                    "S\xE4hk\xF6inen kalenteri, josta k\xE4y ilmi eri p\xE4ivyst\xE4vien kriisipalveluiden vapaat ajat/ puhelinnumerot/yhteystiedot"
                 ),
-                React.createElement("br", null),
+                React.createElement("hr", null),
                 React.createElement(
                     "b",
                     null,
-                    "Uni, ravinto, liikunta:"
+                    "Linkkej\xE4 kolmansiin osapuoliin"
                 ),
-                React.createElement("br", null)
+                React.createElement("hr", null)
             )
         );
     }
@@ -21369,6 +21264,19 @@ class Info extends React.Component {
             { "class": "container" },
             React.createElement(
                 "div",
+                { "class": "row", style: { padding: "15px" } },
+                React.createElement(
+                    "div",
+                    { "class": "col-12 text-center", style: { color: "white" } },
+                    React.createElement(
+                        "h1",
+                        { style: styles.title },
+                        "Eropaketti"
+                    )
+                )
+            ),
+            React.createElement(
+                "div",
                 null,
                 content
             ),
@@ -21380,8 +21288,8 @@ class Info extends React.Component {
                     { "class": "col-12 text-center" },
                     React.createElement(
                         "a",
-                        { href: "/timeline", "class": "btn btn-primary" },
-                        "TIMELINE"
+                        { href: "/timeline", "class": "btn btn-primary", style: styles.button },
+                        "EROPROSESSI"
                     )
                 )
             )
@@ -21389,13 +21297,23 @@ class Info extends React.Component {
     }
 }
 
+const styles = {
+    title: {
+        fontFamily: "Roboto Condensed, sans-serif"
+    },
+    button: {
+        fontFamily: "Roboto Condensed, sans-serif",
+        fontSize: "25px"
+    }
+};
+
 module.exports = Info;
 
 /***/ }),
 /* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(3);
+var React = __webpack_require__(4);
 var InfoSection = __webpack_require__(34);
 
 class InfoBox extends React.Component {
@@ -21416,17 +21334,37 @@ class InfoBox extends React.Component {
     }
 
     render() {
+        var transform = "none";
+        if (this.state.expanded) {
+            transform = "rotate(90deg)";
+        }
+        var rotationStyle = {
+            WebkitTransform: transform,
+            transition: "all 0.4s",
+            display: "inline-block",
+            float: "right",
+            fontSize: "30px"
+        };
         return React.createElement(
             "div",
             { id: this.props.title, style: styles.box },
             React.createElement(
-                "h2",
+                "div",
                 { onClick: this.handleClick, style: { cursor: "pointer" } },
-                this.props.title
+                React.createElement(
+                    "h4",
+                    { style: { fontFamily: "Roboto Condensed, sans-serif" } },
+                    this.props.title,
+                    React.createElement(
+                        "span",
+                        { style: rotationStyle },
+                        React.createElement("i", { "class": "fa fa-angle-right", "aria-hidden": "true", style: { float: "right" } })
+                    )
+                )
             ),
             React.createElement(
                 InfoSection,
-                { id: this.props.id, expanded: this.state.expanded },
+                { id: this.props.id, expanded: this.state.expanded, style: { fontFamily: "Roboto Condensed, sans-serif" } },
                 this.props.children
             )
         );
@@ -21436,13 +21374,16 @@ class InfoBox extends React.Component {
 const styles = {
     box: {
         boxSizing: "border-box",
-        padding: "5px",
+        padding: "10px",
         marginTop: "2%",
         marginBottom: "4%",
         marginLeft: "4%",
         marginRight: "4%",
         backgroundColor: "white",
-        boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)"
+        boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)",
+        borderRadius: "8px",
+        backgroundColor: "#F08080",
+        color: "white"
     }
 };
 
@@ -21452,7 +21393,7 @@ module.exports = InfoBox;
 /* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(3);
+var React = __webpack_require__(4);
 
 class InfoSection extends React.Component {
     componentDidMount() {
@@ -21473,7 +21414,8 @@ class InfoSection extends React.Component {
         const style = {
             height: height,
             transition: "height 0.5s",
-            overflow: "hidden"
+            overflow: "hidden",
+            borderRadius: "8px"
         };
 
         return React.createElement(
@@ -21481,7 +21423,7 @@ class InfoSection extends React.Component {
             { style: style },
             React.createElement(
                 "div",
-                { id: "content-" + this.props.id },
+                { id: "content-" + this.props.id, style: { fontFamily: "Oxygen, sans-serif" } },
                 React.createElement("hr", null),
                 this.props.children
             )
@@ -21490,91 +21432,6 @@ class InfoSection extends React.Component {
 }
 
 module.exports = InfoSection;
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var React = __webpack_require__(3);
-var data = __webpack_require__(36);
-
-class Test extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            questions: data,
-            currentQuestion: data[0],
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0
-        };
-
-        this.updateState = this.updateState.bind(this);
-    }
-
-    updateState(bool) {
-        if (bool) {
-            var newValue = this.state;
-            this.updateState();
-        }
-    }
-
-    render() {
-        return React.createElement(
-            "div",
-            { "class": "container" },
-            React.createElement(
-                "div",
-                { "class": "row justify-content-center" },
-                React.createElement(
-                    "h1",
-                    null,
-                    "Kyss\xE4rit"
-                )
-            ),
-            React.createElement(
-                "div",
-                { "class": "row justify-content-center text-center" },
-                React.createElement(
-                    "h2",
-                    null,
-                    this.state.question.question
-                )
-            ),
-            React.createElement(
-                "div",
-                { "class": "row justify-content-center" },
-                React.createElement(
-                    "div",
-                    { "class": "col-md-5 col-xs-11" },
-                    React.createElement(
-                        "button",
-                        { onClick: () => this.updateState(true), "class": "btn btn-outline-primary", style: style.buttonStyle },
-                        "Kyll\xE4"
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "col-md-5 col-xs-11" },
-                    React.createElement(
-                        "button",
-                        { onClick: () => this.updateState(false), "class": "btn btn-outline-primary", style: style.buttonStyle },
-                        "Ei"
-                    )
-                )
-            )
-        );
-    }
-}
-
-module.exports = Test;
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-module.exports = [{"question":"Eka kyssäri","value":"1"},{"question":"Toka kyssäri","value":"2"},{"question":"Kolmas kyssäri","value":"3"},{"question":"Neljäs kyssäri","value":"4"}]
 
 /***/ })
 /******/ ]);
