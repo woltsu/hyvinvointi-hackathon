@@ -21191,62 +21191,94 @@ class Info extends React.Component {
         return React.createElement(
             "div",
             null,
-            React.createElement(InfoBox, { id: "1", title: "1. Asumisen j\xE4rjest\xE4minen", content: "Asuminen" }),
             React.createElement(
-                InfoBox,
-                { id: "2", title: "2. Lapset", content: "Lapset" },
+                "div",
+                { "class": "row justify-content-center" },
                 React.createElement(
-                    "b",
-                    null,
-                    "Tietopaketti lapsen asemasta eroperheess\xE4; lapsen oikeus henkiseen hyvinvointiin, huoltajuus, asumisratkaisut, tapaamiset ja elatusasiat"
-                ),
-                React.createElement("hr", null),
-                React.createElement(
-                    "b",
-                    null,
-                    "mahdollisuus chat tapaamiseen asiantuntijan kanssa ja mahdollisuus ohjattuun chat keskusteluun eron toisen osapuolen kanssa."
-                ),
-                React.createElement("hr", null),
-                React.createElement(
-                    "b",
-                    null,
-                    "elatusapulaskuri"
-                ),
-                React.createElement("hr", null),
-                React.createElement(
-                    "b",
-                    null,
-                    "Linkit= kutsutaan 3. sektori kehitt\xE4m\xE4\xE4n sis\xE4lt\xF6\xE4"
+                    "div",
+                    { "class": "col-12" },
+                    React.createElement(InfoBox, { id: "1", title: "1. Asumisen j\xE4rjest\xE4minen", content: "Asuminen" })
                 )
             ),
-            React.createElement(InfoBox, { id: "3", title: "3. Taloudellinen selviytyminen", content: "Talous" }),
             React.createElement(
-                InfoBox,
-                { id: "4", title: "4. Oma hyvinvointi", content: "Oikeus" },
+                "div",
+                { "class": "row justify-content-center" },
                 React.createElement(
-                    "b",
-                    null,
-                    "Tietopaketti"
-                ),
-                React.createElement("hr", null),
+                    "div",
+                    { "class": "col-12" },
+                    React.createElement(
+                        InfoBox,
+                        { id: "2", title: "2. Lapset", content: "Lapset" },
+                        React.createElement(
+                            "b",
+                            null,
+                            "Tietopaketti lapsen asemasta eroperheess\xE4; lapsen oikeus henkiseen hyvinvointiin, huoltajuus, asumisratkaisut, tapaamiset ja elatusasiat"
+                        ),
+                        React.createElement("hr", null),
+                        React.createElement(
+                            "b",
+                            null,
+                            "Mahdollisuus chat tapaamiseen asiantuntijan kanssa ja mahdollisuus ohjattuun chat keskusteluun eron toisen osapuolen kanssa."
+                        ),
+                        React.createElement("hr", null),
+                        React.createElement(
+                            "b",
+                            null,
+                            "Elatusapulaskuri"
+                        ),
+                        React.createElement("hr", null),
+                        React.createElement(
+                            "b",
+                            null,
+                            "Linkit; kutsutaan 3. sektori kehitt\xE4m\xE4\xE4n sis\xE4lt\xF6\xE4"
+                        )
+                    )
+                )
+            ),
+            React.createElement(
+                "div",
+                { "class": "row justify-content-center" },
                 React.createElement(
-                    "b",
-                    null,
-                    "Mahdollisuus chattiin"
-                ),
-                React.createElement("hr", null),
+                    "div",
+                    { "class": "col-12" },
+                    React.createElement(InfoBox, { id: "3", title: "3. Taloudellinen selviytyminen", content: "Talous" })
+                )
+            ),
+            React.createElement(
+                "div",
+                { "class": "row justify-content-center" },
                 React.createElement(
-                    "b",
-                    null,
-                    "S\xE4hk\xF6inen kalenteri, josta k\xE4y ilmi eri p\xE4ivyst\xE4vien kriisipalveluiden vapaat ajat/ puhelinnumerot/yhteystiedot"
-                ),
-                React.createElement("hr", null),
-                React.createElement(
-                    "b",
-                    null,
-                    "Linkkej\xE4 kolmansiin osapuoliin"
-                ),
-                React.createElement("hr", null)
+                    "div",
+                    { "class": "col-12" },
+                    React.createElement(
+                        InfoBox,
+                        { id: "4", title: "4. Oma hyvinvointi", content: "Oikeus" },
+                        React.createElement(
+                            "b",
+                            null,
+                            "Tietopaketti"
+                        ),
+                        React.createElement("hr", null),
+                        React.createElement(
+                            "b",
+                            null,
+                            "Mahdollisuus chattiin"
+                        ),
+                        React.createElement("hr", null),
+                        React.createElement(
+                            "b",
+                            null,
+                            "S\xE4hk\xF6inen kalenteri, josta k\xE4y ilmi eri p\xE4ivyst\xE4vien kriisipalveluiden vapaat ajat/ puhelinnumerot/yhteystiedot"
+                        ),
+                        React.createElement("hr", null),
+                        React.createElement(
+                            "b",
+                            null,
+                            "Linkkej\xE4 kolmansiin osapuoliin"
+                        ),
+                        React.createElement("hr", null)
+                    )
+                )
             )
         );
     }
@@ -21299,7 +21331,8 @@ class Info extends React.Component {
 
 const styles = {
     title: {
-        fontFamily: "Roboto Condensed, sans-serif"
+        fontFamily: "Roboto Condensed, sans-serif",
+        fontWeight: 500
     },
     button: {
         fontFamily: "Roboto Condensed, sans-serif",
@@ -21413,7 +21446,7 @@ class InfoSection extends React.Component {
         }
         const style = {
             height: height,
-            transition: "height 0.5s",
+            transition: "height 0.6s",
             overflow: "hidden",
             borderRadius: "8px"
         };
