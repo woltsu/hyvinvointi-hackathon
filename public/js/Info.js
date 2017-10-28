@@ -60,7 +60,7 @@ class Info extends React.Component {
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <a href="/timeline" class="btn btn-primary" style={styles.button}>EROPROSESSI</a>
+                        <a href="/timeline" class="btn btn-sample" style={styles.button}>EROPROSESSI</a>
                     </div>
                 </div>
             </div>

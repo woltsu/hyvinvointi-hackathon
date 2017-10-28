@@ -21288,7 +21288,7 @@ class Info extends React.Component {
                     { "class": "col-12 text-center" },
                     React.createElement(
                         "a",
-                        { href: "/timeline", "class": "btn btn-primary", style: styles.button },
+                        { href: "/timeline", "class": "btn btn-sample", style: styles.button },
                         "EROPROSESSI"
                     )
                 )

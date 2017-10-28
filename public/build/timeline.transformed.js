@@ -21286,10 +21286,10 @@ class Timeline extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                { style: { position: "fixed", top: "10px", left: "2%" }, "class": "text-center" },
+                { style: { position: "fixed", top: "15px", left: "2%" }, "class": "text-center" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "a",
-                    { href: "/", "class": "btn btn-primary", style: styles.button },
+                    { href: "/", "class": "btn btn-sample", style: styles.button },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { "class": "fa fa-angle-left fa-3x", "aria-hidden": "true" })
                 )
             )

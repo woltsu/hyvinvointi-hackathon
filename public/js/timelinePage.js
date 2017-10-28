@@ -53,8 +53,8 @@ class Timeline extends React.Component {
                         </li>
                     </ul>
                 </section>
-                <div style={{ position: "fixed", top: "10px", left: "2%" }} class="text-center" >
-                    <a href="/" class="btn btn-primary" style={styles.button}>
+                <div style={{ position: "fixed", top: "15px", left: "2%" }} class="text-center" >
+                    <a href="/" class="btn btn-sample" style={styles.button}>
                         <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
                     </a>
                 </div>
