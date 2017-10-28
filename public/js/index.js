@@ -1,7 +1,6 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
-var AdultInfo = require("./adultInfo");
-var YouthInfo = require("./youthInfo");
+var Info = require("./Info");
 
 class Index extends React.Component {
     constructor(props) {
@@ -23,15 +22,7 @@ class Index extends React.Component {
 
     render() {
         if (this.state.modeSelected) {
-            if (this.state.mode === "aikuinen") {
-                return (
-                    <AdultInfo />
-                );
-            } else {
-                return (
-                    <YouthInfo />
-                );
-            }
+            return (<Info mode={this.state.mode} />);
         }
         return (
             <div class="container">
@@ -43,10 +34,10 @@ class Index extends React.Component {
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-5 col-xs-11">
-                        <button onClick={() => this.selectMode("aikuinen")} class="btn btn-primary" style={style.buttonStyle}>Aikuinen</button>
+                        <button onClick={() => this.selectMode("Aikuinen")} class="btn btn-primary" style={style.buttonStyle}>Aikuinen</button>
                     </div>
                     <div class="col-md-5 col-xs-11">
-                        <button onClick={() => this.selectMode("lapsi")} class="btn btn-primary" style={style.buttonStyle}>Lapsi</button>
+                        <button onClick={() => this.selectMode("Nuori")} class="btn btn-primary" style={style.buttonStyle}>Lapsi</button>
                     </div>
                 </div>
             </div>

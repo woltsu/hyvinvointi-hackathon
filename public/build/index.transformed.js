@@ -958,8 +958,7 @@ module.exports = getActiveElement;
 
 var React = __webpack_require__(3);
 var ReactDOM = __webpack_require__(18);
-var AdultInfo = __webpack_require__(32);
-var YouthInfo = __webpack_require__(33);
+var Info = __webpack_require__(32);
 
 class Index extends React.Component {
     constructor(props) {
@@ -981,11 +980,7 @@ class Index extends React.Component {
 
     render() {
         if (this.state.modeSelected) {
-            if (this.state.mode === "aikuinen") {
-                return React.createElement(AdultInfo, null);
-            } else {
-                return React.createElement(YouthInfo, null);
-            }
+            return React.createElement(Info, { mode: this.state.mode });
         }
         return React.createElement(
             "div",
@@ -1016,7 +1011,7 @@ class Index extends React.Component {
                     { "class": "col-md-5 col-xs-11" },
                     React.createElement(
                         "button",
-                        { onClick: () => this.selectMode("aikuinen"), "class": "btn btn-primary", style: style.buttonStyle },
+                        { onClick: () => this.selectMode("Aikuinen"), "class": "btn btn-primary", style: style.buttonStyle },
                         "Aikuinen"
                     )
                 ),
@@ -1025,7 +1020,7 @@ class Index extends React.Component {
                     { "class": "col-md-5 col-xs-11" },
                     React.createElement(
                         "button",
-                        { onClick: () => this.selectMode("lapsi"), "class": "btn btn-primary", style: style.buttonStyle },
+                        { onClick: () => this.selectMode("Nuori"), "class": "btn btn-primary", style: style.buttonStyle },
                         "Lapsi"
                     )
                 )
@@ -21248,18 +21243,33 @@ module.exports = function() {
 /***/ (function(module, exports, __webpack_require__) {
 
 var React = __webpack_require__(3);
+var InfoBox = __webpack_require__(33);
 
-class AdultInfo extends React.Component {
+class Info extends React.Component {
     render() {
         return React.createElement(
-            "h1",
-            null,
-            "Infoa aikuisille"
+            "div",
+            { "class": "container" },
+            React.createElement(
+                "div",
+                { "class": "row" },
+                React.createElement(
+                    "div",
+                    { "class": "col-12 text-center" },
+                    React.createElement(
+                        "h1",
+                        null,
+                        this.props.mode
+                    )
+                )
+            ),
+            React.createElement(InfoBox, { title: "1. Tunteet", content: "aaaaaa" }),
+            React.createElement(InfoBox, { title: "2. Talous", content: "bbbbb" })
         );
     }
 }
 
-module.exports = AdultInfo;
+module.exports = Info;
 
 /***/ }),
 /* 33 */
@@ -21267,17 +21277,39 @@ module.exports = AdultInfo;
 
 var React = __webpack_require__(3);
 
-class YouthInfo extends React.Component {
+class InfoBox extends React.Component {
     render() {
         return React.createElement(
-            "h1",
-            null,
-            "Infoa nuorille"
+            "div",
+            { style: styles.box },
+            React.createElement(
+                "h2",
+                null,
+                this.props.title
+            ),
+            React.createElement(
+                "p",
+                null,
+                this.props.content
+            )
         );
     }
 }
 
-module.exports = YouthInfo;
+const styles = {
+    box: {
+        boxSizing: "border-box",
+        padding: "5px",
+        marginTop: "2%",
+        marginBottom: "4%",
+        marginLeft: "4%",
+        marginRight: "4%",
+        backgroundColor: "white",
+        boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)"
+    }
+};
+
+module.exports = InfoBox;
 
 /***/ })
 /******/ ]);
