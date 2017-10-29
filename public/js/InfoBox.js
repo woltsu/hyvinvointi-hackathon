@@ -28,16 +28,18 @@ class InfoBox extends React.Component {
             transition: "all 0.4s",
             display: "inline-block",
             float: "right",
-            fontSize: "30px"
+            fontSize: "30px",
+            position: "relative",
+            right: "1%"
         }
         return (
             <div id={this.props.title} style={styles.box}>
                 <div onClick={this.handleClick} style={{ cursor: "pointer" }}>
-                    <h4 style={{ fontFamily: "Roboto Condensed, sans-serif", position: "relative", top: "3px", left: "6px" }}>
+                    <h4 style={{ fontFamily: "Roboto Condensed, sans-serif", position: "relative", top: "3px", left: "1%" }}>
                         <span style={{}}>
                             {this.props.logo}
                         </span>
-                        <span style={{position: "relative", left: "6px"}}>
+                        <span style={{position: "relative", left: "1%"}}>
                             {this.props.title}
                         </span>
                         <span style={rotationStyle}>

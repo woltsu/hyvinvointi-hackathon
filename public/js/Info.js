@@ -85,13 +85,13 @@ class Info extends React.Component {
                 <div>
                     {content}
                 </div>
-                <div class="row">
+                <div class="row justify-content-center" style={{ marginTop: "1%" }}>
                     <div class="col-12 text-center">
                         <a href="/timeline" class="btn btn-sample" style={styles.button}>EROPROSESSI</a>
                     </div>
                 </div>
                 <div>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" style={{marginBottom: "3%"}}>
                         <div class="col-md-6 col-xs-12">
                             <div class="text-center" style={styles.box}>
                                 <h2 style={styles.title}><span><RedBall /></span>LIVE CHAT</h2>

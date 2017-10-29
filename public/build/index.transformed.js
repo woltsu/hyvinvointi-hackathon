@@ -21326,7 +21326,7 @@ class Info extends React.Component {
             ),
             React.createElement(
                 "div",
-                { "class": "row" },
+                { "class": "row justify-content-center", style: { marginTop: "1%" } },
                 React.createElement(
                     "div",
                     { "class": "col-12 text-center" },
@@ -21342,7 +21342,7 @@ class Info extends React.Component {
                 null,
                 React.createElement(
                     "div",
-                    { "class": "row justify-content-center" },
+                    { "class": "row justify-content-center", style: { marginBottom: "3%" } },
                     React.createElement(
                         "div",
                         { "class": "col-md-6 col-xs-12" },
@@ -21425,7 +21425,9 @@ class InfoBox extends React.Component {
             transition: "all 0.4s",
             display: "inline-block",
             float: "right",
-            fontSize: "30px"
+            fontSize: "30px",
+            position: "relative",
+            right: "1%"
         };
         return React.createElement(
             "div",
@@ -21435,7 +21437,7 @@ class InfoBox extends React.Component {
                 { onClick: this.handleClick, style: { cursor: "pointer" } },
                 React.createElement(
                     "h4",
-                    { style: { fontFamily: "Roboto Condensed, sans-serif", position: "relative", top: "3px", left: "6px" } },
+                    { style: { fontFamily: "Roboto Condensed, sans-serif", position: "relative", top: "3px", left: "1%" } },
                     React.createElement(
                         "span",
                         { style: {} },
@@ -21443,7 +21445,7 @@ class InfoBox extends React.Component {
                     ),
                     React.createElement(
                         "span",
-                        { style: { position: "relative", left: "4px" } },
+                        { style: { position: "relative", left: "1%" } },
                         this.props.title
                     ),
                     React.createElement(
