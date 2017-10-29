@@ -21435,13 +21435,17 @@ class InfoBox extends React.Component {
                 { onClick: this.handleClick, style: { cursor: "pointer" } },
                 React.createElement(
                     "h4",
-                    { style: { fontFamily: "Roboto Condensed, sans-serif" } },
+                    { style: { fontFamily: "Roboto Condensed, sans-serif", position: "relative", top: "3px", left: "6px" } },
                     React.createElement(
                         "span",
-                        { style: { marginRight: "2%" } },
+                        { style: {} },
                         this.props.logo
                     ),
-                    this.props.title,
+                    React.createElement(
+                        "span",
+                        { style: { position: "relative", left: "4px" } },
+                        this.props.title
+                    ),
                     React.createElement(
                         "span",
                         { style: rotationStyle },

@@ -33,11 +33,13 @@ class InfoBox extends React.Component {
         return (
             <div id={this.props.title} style={styles.box}>
                 <div onClick={this.handleClick} style={{ cursor: "pointer" }}>
-                    <h4 style={{ fontFamily: "Roboto Condensed, sans-serif" }}>
-                        <span style={{marginRight: "2%"}}>
+                    <h4 style={{ fontFamily: "Roboto Condensed, sans-serif", position: "relative", top: "3px", left: "6px" }}>
+                        <span style={{}}>
                             {this.props.logo}
                         </span>
-                        {this.props.title}
+                        <span style={{position: "relative", left: "6px"}}>
+                            {this.props.title}
+                        </span>
                         <span style={rotationStyle}>
                             <i class="fa fa-angle-right" aria-hidden="true" style={{ float: "right" }}></i>
                         </span>
