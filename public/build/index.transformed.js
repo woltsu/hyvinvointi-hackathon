@@ -21182,6 +21182,11 @@ ReactDOM.render(React.createElement(Index, null), document.getElementById("app")
 var React = __webpack_require__(4);
 var InfoBox = __webpack_require__(33);
 
+const house = React.createElement("i", { "class": "fa fa-home", "aria-hidden": "true" });
+const child = React.createElement("i", { "class": "fa fa-child", "aria-hidden": "true" });
+const money = React.createElement("i", { "class": "fa fa-money", "aria-hidden": "true" });
+const health = React.createElement("i", { "class": "fa fa-heartbeat", "aria-hidden": "true" });
+
 class Info extends React.Component {
     constructor(props) {
         super(props);
@@ -21197,7 +21202,7 @@ class Info extends React.Component {
                 React.createElement(
                     "div",
                     { "class": "col-12" },
-                    React.createElement(InfoBox, { id: "1", title: "1. Asumisen j\xE4rjest\xE4minen", content: "Asuminen" })
+                    React.createElement(InfoBox, { id: "1", title: "Asumisen järjestäminen", logo: house })
                 )
             ),
             React.createElement(
@@ -21208,7 +21213,7 @@ class Info extends React.Component {
                     { "class": "col-12" },
                     React.createElement(
                         InfoBox,
-                        { id: "2", title: "2. Lapset", content: "Lapset" },
+                        { id: "2", title: "Lapset", logo: child },
                         React.createElement(
                             "b",
                             null,
@@ -21247,7 +21252,7 @@ class Info extends React.Component {
                 React.createElement(
                     "div",
                     { "class": "col-12" },
-                    React.createElement(InfoBox, { id: "3", title: "3. Taloudellinen selviytyminen", content: "Talous" })
+                    React.createElement(InfoBox, { id: "3", title: "Taloudellinen selviytyminen", logo: money })
                 )
             ),
             React.createElement(
@@ -21258,7 +21263,7 @@ class Info extends React.Component {
                     { "class": "col-12" },
                     React.createElement(
                         InfoBox,
-                        { id: "4", title: "4. Oma hyvinvointi", content: "Oikeus" },
+                        { id: "4", title: "Oma hyvinvointi", logo: health },
                         React.createElement(
                             "b",
                             null,
@@ -21393,6 +21398,11 @@ class InfoBox extends React.Component {
                 React.createElement(
                     "h4",
                     { style: { fontFamily: "Roboto Condensed, sans-serif" } },
+                    React.createElement(
+                        "span",
+                        { style: { marginRight: "2%" } },
+                        this.props.logo
+                    ),
                     this.props.title,
                     React.createElement(
                         "span",

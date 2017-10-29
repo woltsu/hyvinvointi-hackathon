@@ -1,6 +1,11 @@
 var React = require("react");
 var InfoBox = require("./InfoBox");
 
+const house = <i class="fa fa-home" aria-hidden="true"></i>;
+const child = <i class="fa fa-child" aria-hidden="true"></i>;
+const money = <i class="fa fa-money" aria-hidden="true"></i>;
+const health = <i class="fa fa-heartbeat" aria-hidden="true"></i>;
+
 class Info extends React.Component {
     constructor(props) {
         super(props);
@@ -11,13 +16,13 @@ class Info extends React.Component {
             <div>
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <InfoBox id="1" title="1. Asumisen järjestäminen" content="Asuminen">
+                        <InfoBox id="1" title={"Asumisen järjestäminen"} logo={house}>
                         </InfoBox>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <InfoBox id="2" title="2. Lapset" content="Lapset">
+                        <InfoBox id="2" title="Lapset" logo={child}>
                             <b>Tietopaketti lapsen asemasta eroperheessä;
                         lapsen oikeus henkiseen hyvinvointiin, huoltajuus, asumisratkaisut, tapaamiset ja elatusasiat</b>
                             <hr />
@@ -25,7 +30,7 @@ class Info extends React.Component {
                         ja mahdollisuus ohjattuun chat keskusteluun eron toisen osapuolen kanssa.</b>
                             <hr />
                             <b>
-                                Sähköinen kalenteri, jonka avulla voi nähdä eri palveluiden vapaita aikoja ja mahdollisesti 
+                                Sähköinen kalenteri, jonka avulla voi nähdä eri palveluiden vapaita aikoja ja mahdollisesti
                                 varata niitä
                             </b>
                             <hr />
@@ -37,13 +42,13 @@ class Info extends React.Component {
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <InfoBox id="3" title="3. Taloudellinen selviytyminen" content="Talous">
+                        <InfoBox id="3" title="Taloudellinen selviytyminen" logo={money}>
                         </InfoBox>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <InfoBox id="4" title="4. Oma hyvinvointi" content="Oikeus">
+                        <InfoBox id="4" title="Oma hyvinvointi" logo={health}>
                             <b>Tietopaketti</b>
                             <hr />
                             <b>Mahdollisuus chattiin</b>
