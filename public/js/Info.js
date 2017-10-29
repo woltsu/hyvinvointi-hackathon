@@ -1,5 +1,6 @@
 var React = require("react");
 var InfoBox = require("./InfoBox");
+var RedBall = require("./RedBall");
 
 const house = <i class="fa fa-home" aria-hidden="true"></i>;
 const child = <i class="fa fa-child" aria-hidden="true"></i>;
@@ -89,6 +90,15 @@ class Info extends React.Component {
                         <a href="/timeline" class="btn btn-sample" style={styles.button}>EROPROSESSI</a>
                     </div>
                 </div>
+                <div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="text-center" style={styles.box}>
+                                <h2 style={styles.title}><span><RedBall /></span>LIVE CHAT</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
@@ -102,6 +112,17 @@ const styles = {
     button: {
         fontFamily: "Roboto Condensed, sans-serif",
         fontSize: "25px"
+    },
+    box: {
+        boxSizing: "border-box",
+        padding: "10px",
+        marginTop: "8%",
+        marginBottom: "2%",
+        backgroundColor: "white",
+        boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12)",
+        borderRadius: "8px",
+        backgroundColor: "#FA8072",
+        color: "white"
     }
 }
 
