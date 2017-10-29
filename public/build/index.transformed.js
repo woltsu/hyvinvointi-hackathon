@@ -21314,7 +21314,7 @@ class Info extends React.Component {
                     React.createElement(
                         "h1",
                         { style: styles.title },
-                        "Eropaketti"
+                        "Ero-info"
                     )
                 )
             ),

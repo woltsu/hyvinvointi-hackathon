@@ -78,7 +78,7 @@ class Info extends React.Component {
             <div class="container">
                 <div class="row" style={{ padding: "15px" }}>
                     <div class="col-12 text-center" style={{ color: "white" }}>
-                        <h1 style={styles.title}>Eropaketti</h1>
+                        <h1 style={styles.title}>Ero-info</h1>
                     </div>
                 </div>
                 <div>
