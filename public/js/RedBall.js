@@ -38,13 +38,19 @@ const styles = {
         borderRadius: "50%",
         height: "25px",
         width: "25px",
-        float: "left"
+        float: "left",
+        position: "relative",
+        top: "10px",
+        left: "10px"
     },
     emptyStyle: {
         borderRadius: "50%",
         height: "25px",
         width: "25px",
-        float: "left"
+        float: "left",
+        position: "relative",
+        top: "10px",
+        left: "10px"
     }
 }
 
